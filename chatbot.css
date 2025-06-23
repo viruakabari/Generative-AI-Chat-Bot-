@@ -1,0 +1,125 @@
+*{
+    margin:  0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width:100%;
+    height:100vh;/* height of the system accordingly*/
+    overflow: hidden;
+    /* padding:30px;    */
+    background-image:
+    url('back1.jpg');
+    background-size: cover;
+    background-position: center;
+    /* backdrop-filter: blur(7px); */
+    background-blend-mode: overlay;
+    background-color: rgba(0,0,0,0.7);
+
+}
+
+.chat-container{
+    width: 100%;
+    height:80%;
+    /* background-color: rgb(34, 43, 51);  */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    overflow: auto;
+}
+.user-chatbox{
+    width: 60%;
+    position: relative;
+    left:35%;
+    display: flex;
+    align-items: flex-start;
+
+}
+.uchat-area{
+    width:80%;
+    padding: 17px;
+    background-color: rgba(230, 225, 225, 0.144);  
+    color:rgba(239, 243, 243, 0.829);
+    border-radius: 40px 0px 40px 40px;/*      ,right top,right,bottom,left top*/
+    box-shadow: 2px 2px 10px black;
+    margin-left:14%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.ai-chatbox{
+    width:90%;
+    position: relative;
+
+}
+.aichat-area{
+    width:70%;
+    padding: 20px;
+    background-color: rgba(96, 95, 97, 0.589);
+    position: relative;
+    left:10%;
+    color:rgba(235, 233, 233, 0.829);
+    border-radius: 0px 40px 40px 40px;
+    box-shadow: 2px 2px 10px black;
+    font-weight: 600;
+}
+#userimg{
+    position:absolute;
+    right: 0;
+    filter:drop-shadow(2px 2px 10px black);
+}
+#aiimg{
+    position:absolute;
+    left: 5%;
+    filter:drop-shadow(2px 2px 10px black);
+
+}
+.prompt{
+    width:100%;
+    height:20%;
+    /* background-color: rgb(34, 43, 51);  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.prompt input{
+    width:50%;
+    height: 80px;
+    background-color: rgba(199, 198, 198, 0.103);
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    color: rgb(241, 234, 234);
+    font-size: 20px;
+    padding: 25px;   
+     box-shadow: 2px 2px 10px black;
+
+}
+.prompt button{
+    width:50px;
+    height:50px;
+    border-radius: 40px;
+    background-color: black;
+    border: none;
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    transition:all 0.5s;
+
+}
+.prompt button:hover{
+    background-color: rgba(0, 0, 0, 0.363);
+}
+.load{
+    filter:drop-shadow(2px 2px 10px black);
+
+}
+.chooseimg{
+    width: 30%;
+    border-radius: 30px;
+}
